@@ -1,0 +1,281 @@
+body {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+	margin: 2em;
+
+}
+.topnav {
+          background-color: #E8DFF5;
+          overflow: hidden;
+		  margin-top: 0.75em;
+        }
+
+                    /* Style the links inside the navigation bar */
+        .topnav a {
+          display: inline-block;
+          color: #424242;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+		  
+        }
+
+
+          /* Change the color of links on hover */
+        .topnav a:hover {
+          background-color: #FCF4DD;
+          color: black;
+        }
+
+        /* Add an active class to highlight the current page */
+        .topnav a.active {
+          color: white;
+        }
+ /* Hide the link that should open and close the topnav on small screens */
+        .topnav .icon {
+          display: none;
+        }
+h1 {
+    text-align: center;
+    font-family:"Courier New", monospace;
+
+}
+.oatmealpancakes img {
+    float: right;
+    
+}
+table,  td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 0 40px; /* this is an example of padding */
+    margin: 30px; /* this is an example of margin */
+}
+table {
+    border: 1px solid black;
+}
+footer {
+    text-align: center;
+    padding: 10px 0px;
+}
+h3 {
+    margin: 10px;
+}
+.newsletter img {
+    padding: 10px 45px;
+}
+li {
+    padding: 3px 10px;
+    
+}
+ol {
+    word-spacing: 1px;
+}
+.video-link, a {
+    color: black;
+}
+.box { /* this is an example of a group selector */
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 1em;
+    border: solid 5px; /* this is an example of a border */
+    border-color: black;
+}
+
+ .footer { width: 80%;           /* This is an example of a Class selector */
+            align-content: center;
+            display: grid;
+            grid-template-columns: 100%;
+            margin: auto;
+            text-align: center;
+            margin-top: 1em;
+            }
+        .topnav {
+          background-color:  #E8DFF5;
+          overflow: hidden;
+		  margin-top: 0.75em;
+        }
+
+                    /* Style the links inside the navigation bar */
+        .topnav a {
+          display: inline-block;
+          color: #f2f2f2;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+		  
+        }
+
+
+          /* Change the color of links on hover */
+        .topnav a:hover {
+          background-color: #FCF4DD;
+          color: black;
+        }
+        .footer {
+            padding: 20px 0px;
+            width: 100%;
+            background-color: #FCE1E4;
+        }
+
+
+        .footer .social {                   /* This is an example of a Compound selector */
+            text-align: center;
+            padding-bottom: 25px;
+            color: #424242;
+        }
+        .footer .social a {
+            font-size: 24px;
+            color: inherit;
+            border: 1px solid #ccc;
+            width: 40px;
+            height: 35px;
+            line-height: 38px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.75;
+        }
+        .footer .social a:hover {
+            opacity: 0.9;
+        }
+        .footer ul {
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+
+        .footer ul li a {
+            color: #424242;
+            text-decoration: none;
+                opacity: 0.8;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            padding: 0 15px;
+        }
+        .footer ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer .copyright {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #424242;
+        }
+
+
+@media screen and (max-width: 600px) 
+        {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+            float: right;
+            display: block;
+                            }
+        }
+
+/* mobile */
+             @media screen and (max-width: 600px) 
+             {
+                 img {
+                     max-width: 100%;
+                 }
+				 .grid-header {
+					 float: right;
+					 margin-top: 1em;
+				 }
+				 #usermenu a {
+					 text-decoration: none;
+					 color: black;
+				 }
+
+				 #usermenur {
+					text-align: right;
+				 }
+
+                  .topnav.responsive {position: relative;}
+                  .topnav.responsive a.icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                  }
+                  .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                  }
+                 .logo {
+                    text-align: left;
+					 
+                    }
+}
+
+
+ @media only screen and (min-width: 600px) 
+            {
+.topnav a {
+					padding: 5px 15px;
+					color: black;
+				
+				}
+				
+
+				#usermenu {
+					margin-top: 1em;
+					margin-right: 2em;
+				}
+				
+				#usermenu a {
+					text-decoration: none;
+					color: #333;
+					padding: 10px 5px;
+				}
+				
+				#usermenur {
+					float: right;
+					margin-top: -3em;
+					padding: 2px 3em;
+					
+				}
+				
+				 #searchBar input[type=text] {                     
+                    padding: 5px;
+
+                } 
+				#searchBar input[type=submit] {
+	 				padding: 5px;
+
+				}
+				#searchBar i {
+					margin-left: 1em;
+				}
+
+				#searchBar input[type=button] {                     
+                    padding: 5px;
+					background-color: Transparent;
+					background-repeat:no-repeat;
+					border: none;
+					cursor:pointer;
+					overflow: hidden;
+					outline:none;
+                }
+
+				header {
+					background-color: whitesmoke;
+				}
+				.search_box {
+					text-align: right;
+				}
+				
+				.grid-header {
+					float: right; 
+					margin-right: 1em;
+				}
+				
+}

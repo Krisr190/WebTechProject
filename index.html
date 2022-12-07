@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MyHealthWeb</title>
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	
+		<script>
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+                                    }
+        </script>  
+	
+	<script>
+         setInterval(()=>{
+           const time = document.querySelector(".display #time");
+           let date = new Date();
+           let hours = date.getHours();
+           let minutes = date.getMinutes();
+           let seconds = date.getSeconds();
+           let day_night = "AM";
+           if(hours > 12){
+             day_night = "PM";
+             hours = hours - 12;
+           }
+           if(seconds < 10){
+             seconds = "0" + seconds;
+           }
+           if(minutes < 10){
+             minutes = "0" + minutes;
+           }
+           if(hours < 10){
+             hours = "0" + hours;
+           }
+           time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+         });
+      </script>
+	
+	
+		
+
+</head>
+
+<body>
+	<header>
+	 	<div class="grid-header">
+		
+						<div id="headTop">
+								<div id="usermenu">
+									<a href="categories/login.html">My Account</a>
+									<a href="categories/contact.html">Contact Us</a>
+									
+        						</div>
+				
+						</div>
+
+		
+					</div>
+	
+		
+				  <div class="logo">
+                      <a href="index.html"><img src="images/Logo.png" height="100" alt="Kilkenny_Logo" title="Kilkenny_Logo"></a>
+					</div>
+
+<!-- K.R -->
+			<div class="grid-header2">
+		
+						<div id="headTopr">
+	
+								<div id="usermenur">
+									<form id="searchBar">
+										<input type="text" class="field1" name="q" placeholder="Search..." id="srchInput">
+										<input type="submit" class="field2" title="Search" id="srchButton" value="Search">
+									</form>
+								</div>
+        					</div>
+				
+						</div>
+
+		
+		<div class="topnav" id="myTopnav"> 
+				  <a href="index.html">Home</a>
+				  <a href="categories/bmi.html">BMI</a>
+				  <a href="categories/fitness.html">Fitness</a>
+				  <a href="categories/health.html">Health</a>
+				  <a href="categories/login.html">Login</a>
+				  <a href="categories/register.html">Register</a>
+                  <a href="categories/contact.html">Contact Us</a>
+				  <a href="categories/coronacases.html">Corona Cases</a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				  <i class="fa fa-bars"></i></a>
+
+           </div>  
+	</header>
+	
+	<main>
+	<div class="wrapper">
+         <div class="display">
+            <div id="time"></div>
+         </div>
+      </div>
+		
+		
+    <div class="row">
+		
+        <div class="col">
+			
+            <h1>Welcome To Health Web</h1>
+            <p>This website that you stumbled across on is our very own health website c(:</p>
+            <a href="#aboutUs">Click To See Below</a>
+        </div>
+        <div class="col">
+            <div class="heroImg">
+                <img src="images/home/heroImg.jpg" alt="looking across kilkenny in a top down view">
+                <!-- this picture was sourced from https://upload.wikimedia.org/wikipedia/commons/3/34/Kilkenny_View_from_Round_Tower_to_St_Mary_Cathedral_2007_08_28.jpg -->
+            </div>
+        </div>
+    </div>
+		
+<div class="grid-container">
+	
+	<div class="aboutUs" id="aboutUs"></div>
+	
+
+	
+	
+	 <div class="section1-content1">
+                <div class="card1"> 
+                    <h2>Body Mass Index</h2> 
+                    <p>The body mass index is all about health. It is used to measure your height and weight to work out if your weight is healthy</p>
+					<a href="categories/bmi.html" class="button">View Our BMI Page</a>
+        	   </div>
+            </div>
+        
+        	<div class="section1-content2"><img src="images/home/bmi.jpg" alt="community walk and run" ></div>
+
+
+		<div class="section2-content1"><img src="images/home/fitness.jpg" alt="picture of male and female toilets" ></div>
+        
+            <div class="section2-content2">
+                <div class="card1"> 
+                    <h2>Fitness</h2> 
+                    <p>Physical fitness is a state of health and well-being and, more specifically, the ability to perform aspects of sports, occupations and daily activities.</p>
+					<a href="categories/fitness.html" class="button">View Our Fitness Page</a>
+        	   </div>
+            </div>
+		
+		
+	
+        
+            <div class="section3-content1">
+                <div class="card1"> 
+                    <h2>Health</h2> 
+                    <p>Health is a state of complete physical, mental and social well-being and not merely the absence of disease and infirmity</p>
+					<a href="categories/health.html" class="button">View Our Health Page</a>
+        	   </div>
+           </div>
+				
+		   <div class="section3-content2"><img src="images/home/health.jpg" alt="community walk and run" ></div>
+
+    
+		</div>
+		
+		  <!-- end of main container grid -->
+            
+            <!--footer -->
+     <footer class="footer">
+
+        
+            <ul class="list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="categories/bmi.html">BMI</a>
+                </li>
+                <li>
+                    <a href="categories/fitness.html">Fitness</a>
+                </li>
+                <li>
+                    <a href="categories/health.html">Health</a>
+                </li>
+                <li>
+                    <a href="categories/login.html">Login</a>
+                </li>
+				<li>
+                    <a href="categories/register.html">Register</a>
+                </li>
+                <li>
+                    <a href="categories/contact.html">Contact Us</a>
+                </li>
+				<li>
+					<a href="categories/coronacases.html">Corona Cases</a>
+				</li>
+            </ul>
+            <p class="copyright">Kristers Rakstins (K00273773) @ 06/12/2022</p>
+    </footer> 
+		
+	
+	
+	</main>
+	
+	
+
+
+</body>
+
+
+</html>

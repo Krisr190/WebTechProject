@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+    
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+	<script>
+
+function validate(){
+  var name = document.getElementById("name").value;
+  var address = document.getElementById("address").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var email2 = document.getElementById("email2").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 5){
+    text = "Please Enter valid Name";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(address.length < 5 || address.length > 150){
+    text = "Please Enter valid Address";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(isNaN(phone) || phone.length != 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email2.indexOf("@") == -1 || email2.length < 6){
+    text = "Please retype your Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email2 != email){
+	text = "Please retype your Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length => 140){
+    text = "Please Enter Less Than 140 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  return true;
+}
+
+	</script>
+
+	<title>myHealthWeb</title>
+    
+    
+</head>
+<body>
+<header>
+	 	<div class="grid-header">
+		
+						<div id="headTop">
+								<div id="usermenu">
+									<a href="../categories/login.html">My Account</a>
+									<a href="contact.html">Contact Us</a>
+									
+        						</div>
+				
+						</div>
+
+		
+					</div>
+	
+		
+				  <div class="logo">
+                      <a href="../index.html"><img src="../images/Logo.png" height="100" alt="Kilkenny_Logo" title="Kilkenny_Logo"></a>
+					</div>
+
+<!-- K.R -->
+			<div class="grid-header2">
+		
+						<div id="headTopr">
+	
+								<div id="usermenur">
+									<form id="searchBar">
+										<input type="text" class="field1" name="q" placeholder="Search..." id="srchInput">
+										<input type="submit" class="field2" title="Search" id="srchButton" value="Search">
+									</form>
+								</div>
+        					</div>
+				
+						</div>
+
+		
+		<div class="topnav" id="myTopnav"> 
+				  <a href="../index.html">Home</a>
+				  <a href="../categories/bmi.html">BMI</a>
+				  <a href="../categories/fitness.html">Fitness</a>
+				  <a href="../categories/health.html">Health</a>
+				  <a href="../categories/login.html">Login</a>
+				  <a href="../categories/register.html">Register</a>
+                  <a href="../categories/contact.html">Contact Us</a>
+				  <a href="../categories/coronacases.html">Corona Cases</a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				  <i class="fa fa-bars"></i></a>
+
+           </div>  
+	</header>
+	
+    <div class="wrapper">
+  <h2>Contact us</h2>
+  <div id="error_message">
+     
+  </div>
+  <form action="http://litstudentprojects.net/rwd-a2-response.php" id="myform" onsubmit ="return validate();"  method="post">
+    <div class="input_field">
+        <input type="text" placeholder="Name" id="name">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Address" id="address">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="+353" id="phone">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+	<div class="input_field">
+        <input type="text" placeholder="Retype your email" id="email2">
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Message" id="message"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit" value="Submit" name="myform">
+    </div>
+  </form>
+</div>
+
+    
+    
+    
+            <!--footer -->
+     <footer class="footer">
+
+        
+            <ul class="list">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../categories/bmi.html">BMI</a>
+                </li>
+                <li>
+                    <a href="../categories/fitness.html">Fitness</a>
+                </li>
+                <li>
+                    <a href="../categories/health.html">Health</a>
+                </li>
+                <li>
+                    <a href="../categories/login.html">Login</a>
+                </li>
+				<li>
+                    <a href="../categories/register.html">Register</a>
+                </li>
+                <li>
+                    <a href="../categories/contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <p class="copyright">Kristers Rakstins (K00273773) @ 06/12/2022</p>
+    </footer> 
+		
+
+
+</body>
+</html>

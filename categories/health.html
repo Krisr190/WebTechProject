@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MyHealthWeb</title>
+<link rel="stylesheet" href="../css/health.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	
+		<script>
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+                                    }
+        </script>    
+	
+	
+		
+
+</head>
+
+<body>
+	<header>
+	 	<div class="grid-header">
+		
+						<div id="headTop">
+								<div id="usermenu">
+									<a href="../categories/login.html">My Account</a>
+									<a href="../categories/contact.html">Contact Us</a>
+									
+        						</div>
+				
+						</div>
+
+		
+					</div>
+	
+		
+				  <div class="logo">
+                      <a href="../index.html"><img src="../images/Logo.png" height="100" alt="HealthLogo" title="HealthLogo"></a>
+					</div>
+
+<!-- K.R -->
+			<div class="grid-header2">
+		
+						<div id="headTopr">
+	
+								<div id="usermenur">
+									<form id="searchBar">
+										<input type="text" class="field1" name="q" placeholder="Search..." id="srchInput">
+										<input type="submit" class="field2" title="Search" id="srchButton" value="Search">
+									</form>
+								</div>
+        					</div>
+				
+						</div>
+
+		
+		<div class="topnav" id="myTopnav"> 
+				  <a href="../index.html">Home</a>
+				  <a href="../categories/bmi.html">BMI</a>
+				  <a href="../categories/fitness.html">Fitness</a>
+				  <a href="health.html">Health</a>
+				  <a href="../categories/login.html">Login</a>
+				  <a href="../categories/register.html">Register</a>
+                  <a href="../categories/contact.html">Contact Us</a>
+				  <a href="../categories/coronacases.html">Corona Cases</a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				  <i class="fa fa-bars"></i></a>
+
+           </div>  
+	</header>
+	
+	<main>
+		
+		
+	<div class="introduction">
+		<h1>Welcome to the <span style="color: darkseagreen">Health</span> Page</h1>
+		<a href="#eatingPlan-container" class="button">See Below</a>
+	</div>		
+		
+   <div class="Scontainer">
+        <div class="slider-container">
+			<div class="slider">
+                <a href="#"><img src="../images/health/healthEatingHeroImg.png" alt="Healthy Eating"></a>
+            </div>
+             <div class="slider">
+                <a href="#"><img src="../images/health/healthHero.jpg" alt="Healthy Smoothies"></a>
+            </div>
+            <div class="prev-button" onclick="plusSlide(-1)">&#10094;</div>
+            <div class="next-button" onclick="plusSlide(1)">&#10095;</div>
+            
+            <div class="lines">
+                <div class="line" onclick="currentSlide(1)"></div>
+                <div class="line" onclick="currentSlide(2)"></div>
+			<!--	<div class="line" onclick="currentSlide(3)" ></div>
+               <div class="line" onclick="currentSlide(4)" ></div> 
+        -->
+            </div>
+        </div>
+    </div>
+    <script src="../javascript.js"></script>   
+		
+		
+		
+		<div id="eatingPlan-container">
+			<div class="FoodPlans">
+				<div class="Heading1">
+					<h1>Healthy Food Plans</h1>
+					
+				</div>
+			</div>
+			
+			<div class="SmoothiePlans">
+				<div class="Heading2">
+					<h1>Healthy Smoothies</h1>
+					
+				</div>
+			</div>
+				
+				<div class="card1">
+                <a href="recipeFolder/redhotfusilli.html"><img src="../images/health/food/redhotfusilli.jpg" alt="Red Hot Fusilli">
+					<h2 class="module-title">Red Hot Fusilli</h2></a>
+            </div>
+            
+            <div class="card2">
+                <a href="recipeFolder/sesamechicken.html"><img src="../images/health/food/sesamechicken.jpg" alt="Sesame Chicken">
+                <h2 class="module-title">Sesame Chicken</h2></a>
+            </div>
+            
+  
+            <div class="card3">
+                <a href="recipeFolder/oatmealpancakes.html"><img src="../images/health/food/OatmealPancakes.jpg" alt="Oatmeal Pancakes">
+                <h2 class="module-title">Oatmeal Pancakes</h2></a> 
+            </div>
+				
+			
+			
+			<div class="card4">
+                <a href="recipeFolder/kaleandbanana.html"><img src="../images/health/smoothies/kale&banna_smoothie.jpeg" alt="Kale & Banana Smoothie">
+                <h2 class="module-title">Kale & Banana Smoothie</h2></a>
+            </div>
+            
+            <div class="card5">
+                <a href="recipeFolder/raspberry-peach-mango.html"><img src="../images/health/smoothies/raspberry-peach-mango_smoothie.jpeg" alt="Raspberry, Peach & Mango Smoothie">
+                <h2 class="module-title">Raspberry, Peach & Mango Smoothie Bowl</h2></a>              
+            </div>
+            
+  
+            <div class="card6">
+                <a href="recipeFolder/anti-inflammatory.html"><img src="../images/health/smoothies/anti-inflammatory.jpeg" alt="Anti-inflammatory Smoothie">
+                <h2 class="module-title">Anti-inflammatory Smoothie</h2></a>
+			</div>
+
+		
+		
+		</div>
+		
+		
+
+
+        
+
+		
+		
+		
+    
+	</main>
+            
+            <!--footer -->
+     
+	
+	
+	<footer class="footer">
+
+        
+            <ul class="list">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../categories/bmi.html">BMI</a>
+                </li>
+                <li>
+                    <a href="../categories/fitness.html">Fitness</a>
+                </li>
+                <li>
+                    <a href="../categories/health.html">Health</a>
+                </li>
+                <li>
+                    <a href="../categories/login.html">Login</a>
+                </li>
+				<li>
+                    <a href="../categories/register.html">Register</a>
+                </li>
+                <li>
+                    <a href="../categories/contact.html">Contact Us</a>
+                </li>
+				<li>
+					<a href="../categories/coronacases.html">Corona Cases</a>
+				</li>
+            </ul>
+            <p class="copyright">Kristers Rakstins (K00273773) @ 06/12/2022</p>
+    </footer> 
+		
+	
+	
+	
+	
+	
+
+
+</body>
+
+
+</html>

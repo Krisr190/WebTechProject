@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+    
+    <link rel="stylesheet" href="../css/register.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+	<script>
+
+function validate(){
+  var Username = document.getElementById("userName").value;
+  var email = document.getElementById("email").value;
+  var email2 = document.getElementById("email2").value;
+  var Password = document.getElementById("password").value;
+  var ConfirmPassword = document.getElementById("confirm_password").value;
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(Username.length < 5){
+    text = "Please Enter valid Username with characters over 5";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email2.indexOf("@") == -1 || email2.length < 6){
+    text = "Please retype your Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email2 != email){
+	text = "Please retype your Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(Password == "") {  
+     text = "Fill the password please";  
+	 error_message.innerHTML = text;
+     return false;  
+  }  
+   
+ //minimum password length validation  
+  if(Password.length < 8) {  
+     text = "Password length must be atleast 8 characters";  
+	 error_message.innerHTML = text;
+     return false;  
+  }  
+  
+//maximum length of password validation  
+  if(Password.length > 15) {  
+     text = "Password length must not exceed 15 characters";  
+	 error_message.innerHTML = text;
+     return false;   
+  } 
+  if(ConfirmPassword == ""){
+	  text = "Please Retype Password";
+	  error_message.innerHTML = text;
+	  return false;
+  }
+ 
+  if(Password != ConfirmPassword)  
+  {   
+    text = "Passwords did not match";
+	error_message.innerHTML = text
+	return false;
+  } else {  
+    alert("Login is complete");  
+  } 
+}  
+		
+
+
+ 
+
+
+
+	
+	</script>
+
+	<title>myHealthWeb</title>
+    
+    
+</head>
+<body>
+<header>
+	 	<div class="grid-header">
+		
+						<div id="headTop">
+								<div id="usermenu">
+									<a href="../categories/login.html">My Account</a>
+									<a href="../categories/contact.html">Contact Us</a>
+									
+        						</div>
+				
+						</div>
+
+		
+					</div>
+	
+		
+				  <div class="logo">
+                      <a href="../index.html"><img src="../images/Logo.png" height="100" alt="Kilkenny_Logo" title="Kilkenny_Logo"></a>
+					</div>
+
+<!-- K.R -->
+			<div class="grid-header2">
+		
+						<div id="headTopr">
+	
+								<div id="usermenur">
+									<form id="searchBar">
+										<input type="text" class="field1" name="q" placeholder="Search..." id="srchInput">
+										<input type="submit" class="field2" title="Search" id="srchButton" value="Search">
+									</form>
+								</div>
+        					</div>
+				
+						</div>
+
+		
+		<div class="topnav" id="myTopnav"> 
+				  <a href="../index.html">Home</a>
+				  <a href="../categories/bmi.html">BMI</a>
+				  <a href="../categories/fitness.html">Fitness</a>
+				  <a href="../categories/health.html">Health</a>
+				  <a href="../categories/login.html">Login</a>
+				  <a href="register.html">Register</a>
+                  <a href="../categories/contact.html">Contact Us</a>
+				  <a href="../categories/coronacases.html">Corona Cases</a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				  <i class="fa fa-bars"></i></a>
+
+           </div>  
+	</header>
+	
+    <div class="wrapper">
+  <h2>Registration</h2>
+  <div id="error_message">
+     
+  </div>
+  <form id="myform" onsubmit ="return validate();"  method="post">
+    <div class="input_field">
+        <input type="text" placeholder="Username" id="userName">
+    </div>
+	<div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+	<div class="input_field">
+        <input type="text" placeholder="Retype your email" id="email2">
+    </div>
+    <div class="input_field">
+        <input type="password" placeholder="Password" id="password">
+    </div>
+    <div class="input_field">
+        <input type="password" placeholder="Retype Password" id="confirm_password">
+		<input type="checkbox" id="check" onclick="toggleVisibility()"/>  
+    </div>
+	 
+    <div class="btn">
+        <input type="submit" value="Submit" name="myform">
+    </div>
+  </form>
+</div>
+
+    
+    
+    
+            <!--footer -->
+     <footer class="footer">
+
+        
+            <ul class="list">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../categories/bmi.html">BMI</a>
+                </li>
+                <li>
+                    <a href="../categories/fitness.html">Fitness</a>
+                </li>
+                <li>
+                    <a href="../categories/health.html">Health</a>
+                </li>
+                <li>
+                    <a href="../categories/login.html">Login</a>
+                </li>
+				<li>
+                    <a href="register.html">Register</a>
+                </li>
+                <li>
+                    <a href="../categories/contact.html">Contact Us</a>
+                </li>
+				<li>
+					<a href="../categories/coronacases.html">Corona Cases</a>
+				</li>
+            </ul>
+            <p class="copyright">Kristers Rakstins (K00273773) @ 06/12/2022</p>
+    </footer> 
+		
+
+
+</body>
+</html>
